@@ -4,7 +4,7 @@
 ## Introduction
 This pipline extract polygon mask as given in `.json` file and extract transparent `.png` image from the original image.
 
-## How to make Json Files?
+## How to make `.json` Files?
 You can use [Labelme]() to make `.json` files.
 ```
 pip install labelme
