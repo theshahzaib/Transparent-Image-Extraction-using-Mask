@@ -7,8 +7,8 @@ import cv2
 from matplotlib.path import Path
 from tqdm import tqdm
 
-inputFolder = './crops'
-outputFolder = './png_objs'
+inputFolder = './input'
+outputFolder = './png_output'
 
 imgfiles = glob.glob(inputFolder+'/*.jpg')
 

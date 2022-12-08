@@ -4,8 +4,8 @@
 ## Introduction
 This pipline extract polygon mask as given in `.json` file and extract transparent `.png` image from the original image.
 
-## How to make `.json` Files?
-You can use [Labelme]() to make `.json` files.
+## How to make `.json` files?
+You can use [Labelme](https://github.com/wkentaro/labelme) to make `.json` files.
 ```
 pip install labelme
 ```
@@ -35,3 +35,7 @@ pip install labelme
 │   ├── n.png
 ```
 
+## Usage
+```
+python main.py
+```
