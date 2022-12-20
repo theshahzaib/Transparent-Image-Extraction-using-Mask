@@ -7,17 +7,28 @@ import cv2
 from matplotlib.path import Path
 from tqdm import tqdm
 
-inputFolder = './input'
-outputFolder = './png_output'
 
-imgfiles = glob.glob(inputFolder+'/*.jpg')
+inputFolder = './0-name'
+outputFolder = inputFolder+'-t'
+img_ext = 'png'
+
+# remove output folder if exists
+if os.path.exists(outputFolder):
+    os.system('rm -rf '+outputFolder)
+
+# if folder not exist, create it
+if not os.path.exists(outputFolder):
+    os.makedirs(outputFolder)
+
+
+imgfiles = glob.glob(inputFolder+'/*.'+img_ext)
 
 # img_path='./crops/pic_l.jpg'
 
 for img_path in tqdm(imgfiles):
     img_obj = Image.open(img_path)
     img_array = np.array(img_obj)
-    label_path = img_path.replace('jpg', 'json').replace('images', 'labels')
+    label_path = img_path.replace(img_ext, 'json').replace('images', 'labels')
     label_file = open(label_path)
     label_data = json.load(label_file)
 
