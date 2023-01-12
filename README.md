@@ -29,7 +29,7 @@ pip install labelme
 
 ### 2. Output Structure
 ```
-├── png_output
+├── input_result
 │   ├── 1.png
 │   ├── 2.png
 ...

@@ -9,8 +9,8 @@ from tqdm import tqdm
 
 
 inputFolder = './input'
-outputFolder = inputFolder+'-t'
-img_ext = 'png'
+outputFolder = inputFolder+'-result'
+img_ext = 'jpg'
 
 # remove output folder if exists
 if os.path.exists(outputFolder):
