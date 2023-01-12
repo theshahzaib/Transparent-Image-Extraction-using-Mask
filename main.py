@@ -8,7 +8,7 @@ from matplotlib.path import Path
 from tqdm import tqdm
 
 
-inputFolder = './0-name'
+inputFolder = './input'
 outputFolder = inputFolder+'-t'
 img_ext = 'png'
 
@@ -20,10 +20,7 @@ if os.path.exists(outputFolder):
 if not os.path.exists(outputFolder):
     os.makedirs(outputFolder)
 
-
 imgfiles = glob.glob(inputFolder+'/*.'+img_ext)
-
-# img_path='./crops/pic_l.jpg'
 
 for img_path in tqdm(imgfiles):
     img_obj = Image.open(img_path)
