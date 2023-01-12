@@ -9,7 +9,7 @@ from tqdm import tqdm
 
 
 inputFolder = './input'
-outputFolder = inputFolder+'-result'
+outputFolder = inputFolder+'_result'
 img_ext = 'jpg'
 
 # remove output folder if exists
