@@ -7,10 +7,13 @@ import cv2
 from matplotlib.path import Path
 from tqdm import tqdm
 
-
+##############################
+### Update these variables ###
+##############################
 inputFolder = './input'
 outputFolder = inputFolder+'_result'
 img_ext = 'jpg'
+##############################
 
 # remove output folder if exists
 if os.path.exists(outputFolder):
