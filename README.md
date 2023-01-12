@@ -4,6 +4,8 @@
 ## Introduction
 This pipline extract polygon mask as given in `.json` file and extract transparent `.png` image from the original image.
 
+![](./snips/trans_img_extact.png)
+
 ## How to make `.json` files?
 You can use [Labelme](https://github.com/wkentaro/labelme) to make `.json` files.
 ```
